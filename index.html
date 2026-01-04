@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+
+      <!-- tailwind Css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    </style>
+</head>
+<body class="bg-indigo-800 p-10 ">
+
+    <div class="bg-white p-5 rounded max-w-xl mx-auto">
+        
+        <h3 class="font-semibold text-xl"><b>Book Library</b></h3>
+
+        <form name="bookform"   class="space-y-3 mt-3">
+            <input type="text" id="booktitle" placeholder="Book Title" class=" px-4 py-2 rounded bg-blue-100 outline-none w-full" required>
+            <input type="text" id="bookauthor"   placeholder="Book Author"  class="px-4 py-2 rounded bg-blue-100 outline-none w-full">
+            <button type="submit"
+             class="px-3 py-1 bg-orange-500 rounded uppercase font-semibold text-sm text-white">Save</button>
+        </form>
+
+    </div>
+
+    <!-- Added books section -->
+    <section class="bg-white p-5 rounded max-w-xl mx-auto mt-5" >
+
+        <h3 class="font-semibold text-xl"><b>Added Books(<span id="bookcount">0</span>)</b></h3>
+
+        <ul class="mt-3 space-y-2" id="renderedlibrary">
+           
+        </ul>
+
+    <section>
+
+    <script src="./assets/datas/library.js"></script>
+    <script src="./assets/datas/book.js"></script>
+    <script src="./assets/main.js"></script>
+</body>
+</html>
